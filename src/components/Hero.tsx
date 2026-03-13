@@ -1,0 +1,90 @@
+
+import { ArrowDown, Download } from "lucide-react";
+
+const Hero = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-30 animate-floating"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-purple-200 rounded-full opacity-30 animate-floating delay-200"></div>
+        <div className="absolute bottom-40 left-20 w-12 h-12 bg-pink-200 rounded-full opacity-30 animate-floating delay-400"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-indigo-200 rounded-full opacity-30 animate-floating delay-600"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto text-center relative z-10">
+        <div className="opacity-0 animate-fade-in-up">
+          <div className="mb-8">
+            <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1 animate-pulse-glow hover-lift">
+              <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center transition-all duration-300 hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50">
+                <img
+                  src="../public/DSC03746.JPG" // Replace with your actual image path
+                  alt="Profile"
+                  className="w-full h-full object-cover rounded-full"
+                />
+                {/* <span className="text-4xl font-bold text-gray-600">BK</span> */}
+              </div>
+            </div>
+          </div>
+          
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 opacity-0 animate-fade-in-up delay-200">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient">
+              Bhrati Kalsariya
+            </span>
+          </h1>
+          
+          <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto opacity-0 animate-fade-in-up delay-300">
+            Full Stack Developer | Laravel & MERN
+          </p>
+          
+          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-400">
+            Crafting elegant code and beautiful experiences with 4.5+ years of expertise
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 opacity-0 animate-fade-in-up delay-500">
+            <button
+              onClick={scrollToAbout}
+              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover-glow flex items-center gap-2 group"
+            >
+              Explore My Work
+              <ArrowDown size={20} className="group-hover:animate-bounce" />
+            </button>
+            <a
+              href="/Bhrati-Kalsariya-Laravel-React-Developer.pdf"
+              download
+              className="inline-block"
+            >
+              <button className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-105 hover-lift flex items-center gap-2 group">
+                Download Resume
+                <Download size={20} className="group-hover:animate-pulse" />
+              </button>
+            </a>
+            
+            {/* <button className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-105 hover-lift flex items-center gap-2 group">
+              Download Resume
+              <Download size={20} className="group-hover:animate-pulse" />
+            </button> */}
+          </div>
+          
+          <div className="opacity-0 animate-fade-in-up delay-700">
+            <button
+              onClick={scrollToAbout}
+              className="p-2 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover-glow animate-floating"
+            >
+              <ArrowDown size={24} className="text-gray-600" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
