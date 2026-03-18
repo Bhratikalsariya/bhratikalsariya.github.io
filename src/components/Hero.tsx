@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1 animate-pulse-glow hover-lift">
               <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center transition-all duration-300 hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50">
                 <img
-                  src="../public/DSC03746.JPG" // Replace with your actual image path
+                  src={`${import.meta.env.BASE_URL}DSC03746.JPG`}
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
                 />
@@ -57,7 +57,7 @@ const Hero = () => {
               <ArrowDown size={20} className="group-hover:animate-bounce" />
             </button>
             <a
-              href="/Bhrati-Kalsariya-Laravel-React-Developer.pdf"
+              href={`${import.meta.env.BASE_URL}Bhrati-Kalsariya-Laravel-React-Developer.pdf`}
               download
               className="inline-block"
             >
