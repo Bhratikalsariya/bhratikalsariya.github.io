@@ -13,7 +13,7 @@ const Navigation = () => {
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "education", label: "Education" },
-    { id: "certifications", label: "Certifications" },
+    // { id: "certifications", label: "Certifications" },
     { id: "contact", label: "Get In Touch" },
   ];
 

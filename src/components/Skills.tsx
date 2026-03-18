@@ -5,7 +5,7 @@ const Skills = () => {
       title: "Languages & Frameworks",
       skills: [
         "React.js",
-        "JavaScript",
+        "JavaScript (ES6+)",
         "HTML5",
         "CSS3",
         "Bootstrap",
@@ -19,9 +19,11 @@ const Skills = () => {
     {
       title: "API & Authentication",
       skills: [
-        "REST APIs",
+        "RESTful APIs",
         "JWT Authentication",
-        "Role-Based Access Control (RBAC)"
+        "Role-Based Access Control (RBAC)",
+        "API Integration",
+        "Secure Authentication Systems"
       ],
       color: "from-purple-500 to-purple-600"
     },
@@ -29,21 +31,24 @@ const Skills = () => {
       title: "Database",
       skills: [
         "MySQL",
-        "MongoDB"
+        "MongoDB",
+        "Database Design",
+        "Query Optimization"
       ],
       color: "from-green-500 to-green-600"
     },
     {
       title: "Features & Integrations",
       skills: [
-        "Stripe Payments",
+        "Stripe Payment Gateway",
         "Push Notifications",
-        "Cron Jobs",
-        "Map Integration",
-        "Drag & Drop Interfaces",
-        "Admin Panels & Dashboards",
+        "Cron Jobs & Automation",
+        "Google Maps API Integration",
+        "Drag & Drop Interfaces (Konva.js)",
+        "Admin Panel & Dashboard Development",
         "PDF Generation (MPDF, DOMPDF)",
-        "Localization"
+        "Localization / Multi-language Support",
+        "Image & File Upload Handling (AWS S3)"
       ],
       color: "from-orange-500 to-orange-600"
     },
@@ -53,7 +58,9 @@ const Skills = () => {
         "Git",
         "GitHub",
         "Bitbucket",
-        "AWS S3"
+        "AWS S3",
+        "Version Control",
+        "Agile Development"
       ],
       color: "from-pink-500 to-pink-600"
     },
@@ -61,7 +68,9 @@ const Skills = () => {
       title: "Utilities & Editors",
       skills: [
         "VS Code",
-        "Postman"
+        "Postman",
+        "Chrome DevTools",
+        "npm / yarn"
       ],
       color: "from-yellow-500 to-yellow-600"
     }

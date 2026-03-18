@@ -9,7 +9,16 @@ const Experience = () => {
       duration: "2023 – Present",
       location: "Surat, India",
       type: "Full-time",
-      description: "Working as a Full Stack Developer handling web and mobile application projects. Designed and developed complete admin systems with roles and permissions. Created and optimized REST APIs for better performance and faster response time. Integrated third-party services like Stripe and AWS S3. Implemented drag-and-drop functionality using Konva.js. Integrated AI image generation using Python APIs. Managed client communication, project tasks, and improved overall application performance and user experience.",
+      description: [
+        "Developing scalable web and mobile applications using Laravel and MERN stack.",
+        "Designed and implemented complete admin panels with role-based access control (RBAC).",
+        "Built and optimized RESTful APIs to improve performance and response time.",
+        "Integrated third-party services including Stripe payment gateway and AWS S3 for file storage.",
+        "Implemented drag-and-drop functionality using Konva.js for interactive UI features.",
+        "Integrated AI-based image generation using Python APIs.",
+        "Collaborated with clients and managed project tasks to ensure timely delivery.",
+        "Improved application performance, security, and overall user experience."
+      ],
       technologies: [
         "Laravel",
         "PHP",
@@ -29,7 +38,16 @@ const Experience = () => {
       duration: "2021 – 2023",
       location: "Surat, India",
       type: "Full-time",
-      description: "Developed web and mobile applications using Laravel and MERN stack based on project requirements. Built secure REST APIs with JWT authentication and Role-Based Access Control (RBAC). Created admin panels with Excel import/export features. Implemented cron jobs for background tasks. Developed PDF generation features using DOMPDF and MPDF. Integrated map functionality with latitude and longitude. Fixed bugs and enhanced existing features while collaborating with team members to ensure timely project delivery.",
+      description: [
+        "Developed dynamic web and mobile applications using Laravel and MERN stack.",
+        "Built secure REST APIs with JWT authentication and RBAC implementation.",
+        "Created admin dashboards with Excel import/export functionalities.",
+        "Implemented cron jobs for automation and background processing.",
+        "Developed PDF generation features using DOMPDF and MPDF.",
+        "Integrated map-based features using latitude and longitude (Google Maps API).",
+        "Debugged issues and enhanced system performance and existing features.",
+        "Collaborated with team members to deliver high-quality solutions on time."
+      ],
       technologies: [
         "Laravel",
         "React.js",
@@ -50,7 +68,12 @@ const Experience = () => {
       duration: "6 Months",
       location: "Surat, India",
       type: "Training",
-      description: "Completed an intensive training program focused on Laravel, React.js, and modern full-stack web development practices. Gained hands-on experience in building CRUD applications, REST APIs, authentication systems, and responsive user interfaces.",
+      description: [
+        "Completed intensive training in Laravel, React.js, and full-stack development.",
+        "Built CRUD applications and REST APIs from scratch.",
+        "Implemented authentication systems and responsive UI designs.",
+        "Gained practical experience in real-world project development workflows."
+      ],
       technologies: [
         "Laravel",
         "React.js",
@@ -74,7 +97,7 @@ const Experience = () => {
             My professional journey in web development, working with amazing teams to build impactful solutions
           </p>
         </div>
-        
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div
@@ -91,7 +114,7 @@ const Experience = () => {
                     <p className="text-blue-600 font-semibold group-hover:text-purple-600 transition-colors duration-200">{exp.company}</p>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-600">
                   <div className="flex items-center hover:text-blue-600 transition-colors duration-200">
                     <Calendar size={16} className="mr-2" />
@@ -101,20 +124,28 @@ const Experience = () => {
                     <MapPin size={16} className="mr-2" />
                     {exp.location}
                   </div>
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 hover:scale-105 ${
-                    exp.type === 'Training' 
-                      ? 'bg-orange-100 text-orange-800 hover:bg-orange-200' 
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium transition-all duration-300 hover:scale-105 ${exp.type === 'Training'
+                      ? 'bg-orange-100 text-orange-800 hover:bg-orange-200'
                       : 'bg-green-100 text-green-800 hover:bg-green-200'
-                  }`}>
+                    }`}>
                     {exp.type}
                   </span>
                 </div>
               </div>
-              
-              <p className="text-gray-600 mb-6 leading-relaxed hover:text-gray-800 transition-colors duration-200">
+
+              <div className="mb-6">
+                <ul className="list-disc pl-5 space-y-2 text-gray-600 leading-relaxed">
+                  {exp.description.map((point, pointIndex) => (
+                    <li key={pointIndex}>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {/* <p className="text-gray-600 mb-6 leading-relaxed hover:text-gray-800 transition-colors duration-200">
                 {exp.description}
-              </p>
-              
+              </p> */}
+
               <div>
                 <h4 className="text-sm font-semibold text-gray-900 mb-3">Technologies Used:</h4>
                 <div className="flex flex-wrap gap-2">

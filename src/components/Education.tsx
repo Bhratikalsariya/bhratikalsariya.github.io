@@ -6,18 +6,20 @@ const Education = () => {
     {
       degree: "Diploma in Computer Engineering",
       institution: "Government Polytechnic for Girls, Surat",
-      duration: "2018 To 2021",
+      duration: "2018 – 2021",
       grade: "CGPA: 7.37",
       type: "Diploma",
-      description: "Comprehensive study of computer engineering fundamentals, programming languages, and software development practices."
+      description:
+        "Completed a comprehensive program covering computer engineering fundamentals, programming, database management, and software development practices."
     },
     {
       degree: "10th Standard (GSEB)",
-      institution: "Gujarat State Education Board",
+      institution: "Gujarat Secondary and Higher Secondary Education Board",
       duration: "March 2018",
       grade: "85%",
       type: "Secondary Education",
-      description: "Strong foundation in mathematics, science, and general studies with excellent academic performance."
+      description:
+        "Built a strong academic foundation in mathematics, science, and core subjects with excellent performance."
     }
   ];
 
@@ -33,7 +35,7 @@ const Education = () => {
             My academic journey that laid the foundation for my career in software development
           </p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto space-y-8">
           {educationData.map((edu, index) => (
             <div
@@ -51,7 +53,7 @@ const Education = () => {
                     <p className="text-gray-600 text-sm">{edu.description}</p>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
                   <div className="flex items-center text-gray-600">
                     <Calendar size={16} className="mr-2" />
@@ -69,8 +71,8 @@ const Education = () => {
             </div>
           ))}
         </div>
-        
-        <div className="mt-16 text-center">
+
+        {/* <div className="mt-16 text-center">
           <div className="inline-flex items-center px-6 py-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border border-green-200">
             <GraduationCap className="text-green-600 mr-3" size={24} />
             <div className="text-left">
@@ -78,7 +80,7 @@ const Education = () => {
               <p className="text-sm text-gray-600">Strong foundation in computer engineering and technology</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
