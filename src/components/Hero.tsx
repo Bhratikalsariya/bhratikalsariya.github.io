@@ -28,9 +28,9 @@ const Hero = () => {
             <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1 animate-pulse-glow hover-lift">
               <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center transition-all duration-300 hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-800 dark:hover:to-gray-700">
                 <img
-                  src={`${import.meta.env.BASE_URL}DSC03746.JPG`}
+                  src={`${import.meta.env.BASE_URL}DSC03746.png`}
                   alt="Profile"
-                  className="w-full h-full object-cover rounded-full"
+                  className="w-full h-full object-cover object-[center_20%] rounded-full"
                 />
               </div>
             </div>
