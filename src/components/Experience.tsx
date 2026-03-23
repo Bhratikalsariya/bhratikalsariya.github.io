@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
   {
     company: "Sassy Infotech",
-    position: "Full Stack Developer",
+    position: "Laravel Developer",
     duration: "2023 – Present",
     location: "Surat, India",
     type: "Full-time",
@@ -33,7 +33,7 @@ const Experience = () => {
   },
   {
     company: "Elaunch Solutions",
-    position: "Full Stack Developer",
+    position: "Laravel Developer",
     duration: "2021 – 2023",
     location: "Surat, India",
     type: "Full-time",
@@ -62,7 +62,7 @@ const Experience = () => {
   },
   {
     company: "Elaunch Solutions",
-    position: "Full Stack Developer Trainee",
+    position: "Laravel Developer & React Trainee",
     duration: "6 Months",
     location: "Surat, India",
     type: "Training",
